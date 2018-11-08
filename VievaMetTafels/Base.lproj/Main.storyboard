@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="VievaMetTafels" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="sgj-EP-Ol3">
+                                <rect key="frame" x="0.0" y="442" width="375" height="225"/>
+                                <date key="date" timeIntervalSinceReferenceDate="559002551.60330296">
+                                    <!--2018-09-18 22:29:11 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="valueChanged:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="yaZ-XT-19M"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUM-Yd-HIR">
+                                <rect key="frame" x="16" y="235" width="66" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTX-RW-cOD">
+                                <rect key="frame" x="16" y="317" width="63" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buitenhof at night app Vieva" translatesAutoresizingMaskIntoConstraints="NO" id="j27-pl-6Ee">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIEVA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQu-AU-60v">
+                                <rect key="frame" x="81" y="47" width="228" height="96"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="80"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Den Haag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AX9-mR-IbD">
+                                <rect key="frame" x="259" y="151" width="84.5" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRo-hO-r8R">
+                                <rect key="frame" x="72" y="384" width="231" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="EnterToSecondViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HCq-7s-Wio"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rQu-AU-60v" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="47" id="2Pa-SJ-h8b"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rQu-AU-60v" secondAttribute="trailing" symbolic="YES" id="4gX-6X-aFV"/>
+                            <constraint firstItem="sgj-EP-Ol3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5bV-lT-Qyz"/>
+                            <constraint firstAttribute="bottom" secondItem="AX9-mR-IbD" secondAttribute="bottom" constant="492" id="A9N-ay-Wmw"/>
+                            <constraint firstItem="KUM-Yd-HIR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="DeD-fv-1g3"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KUM-Yd-HIR" secondAttribute="trailing" symbolic="YES" id="EeN-wG-8GA"/>
+                            <constraint firstAttribute="trailing" secondItem="bRo-hO-r8R" secondAttribute="trailing" constant="72" id="GEh-qO-gKz"/>
+                            <constraint firstItem="j27-pl-6Ee" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IhB-UE-tyA"/>
+                            <constraint firstItem="KUM-Yd-HIR" firstAttribute="top" secondItem="j27-pl-6Ee" secondAttribute="bottom" constant="60" id="IhT-uV-gQh"/>
+                            <constraint firstItem="j27-pl-6Ee" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iq8-MT-pAW"/>
+                            <constraint firstAttribute="bottom" secondItem="rQu-AU-60v" secondAttribute="bottom" constant="524" id="LVt-Vv-L5q"/>
+                            <constraint firstItem="bRo-hO-r8R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="72" id="OZW-EM-vZi"/>
+                            <constraint firstItem="AX9-mR-IbD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="151" id="Oqa-j3-4ke"/>
+                            <constraint firstItem="sgj-EP-Ol3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QT8-zI-38c"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cTX-RW-cOD" secondAttribute="trailing" symbolic="YES" id="RPw-lF-DS1"/>
+                            <constraint firstItem="bRo-hO-r8R" firstAttribute="top" secondItem="cTX-RW-cOD" secondAttribute="bottom" constant="32" id="UWL-jr-RXg"/>
+                            <constraint firstItem="sgj-EP-Ol3" firstAttribute="top" secondItem="cTX-RW-cOD" secondAttribute="bottom" constant="90" id="W0T-5b-FwI"/>
+                            <constraint firstItem="j27-pl-6Ee" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XAg-W1-bQ0"/>
+                            <constraint firstItem="cTX-RW-cOD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="efb-EM-fZA"/>
+                            <constraint firstItem="sgj-EP-Ol3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fgT-ra-Z29"/>
+                            <constraint firstItem="rQu-AU-60v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="81" id="k9z-in-GFK"/>
+                            <constraint firstItem="AX9-mR-IbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="259" id="mmY-aO-OrQ"/>
+                            <constraint firstAttribute="bottom" secondItem="j27-pl-6Ee" secondAttribute="bottom" constant="492" id="q42-sI-0IV"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AX9-mR-IbD" secondAttribute="trailing" constant="16" id="rZh-A9-0jD"/>
+                            <constraint firstItem="cTX-RW-cOD" firstAttribute="top" secondItem="KUM-Yd-HIR" secondAttribute="bottom" constant="47" id="wTq-hw-cYD"/>
+                            <constraint firstItem="sgj-EP-Ol3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yeG-8k-AhO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="DatePicker" destination="sgj-EP-Ol3" id="ltQ-b9-zbA"/>
+                        <outlet property="LabelDate" destination="cTX-RW-cOD" id="An7-Gb-BA5"/>
+                        <outlet property="LabelTime" destination="KUM-Yd-HIR" id="cIj-Vf-cgn"/>
+                        <segue destination="eMZ-c7-BSE" kind="showDetail" identifier="SecondViewControllerSegue" id="eKm-xr-jx5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248.80000000000001" y="90.404797601199405"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="tEa-pU-GMH">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="eMZ-c7-BSE" customClass="SecondViewController" customModule="VievaMetTafels" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OZx-jw-zEv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaY-lB-NYG">
+                                <rect key="frame" x="99" y="599" width="176" height="36"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Tap to choose table">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="EnterToTafelsViewController:" destination="eMZ-c7-BSE" eventType="touchUpInside" id="BXM-pa-jO2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter guest" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sMA-Mk-A8i">
+                                <rect key="frame" x="16" y="309" width="343" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter E-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NV2-CK-evb">
+                                <rect key="frame" x="16" y="161" width="343" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter phone number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWz-N5-qBB">
+                                <rect key="frame" x="16" y="235" width="343" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqb-gm-Hd4">
+                                <rect key="frame" x="96" y="363" width="182" height="36"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="EnterTafelsViewControllerV2:" destination="eMZ-c7-BSE" eventType="touchUpInside" id="gay-mS-drn"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-Xw-uFQ">
+                                <rect key="frame" x="16" y="422" width="343" height="156"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGm-RI-Gql">
+                                <rect key="frame" x="30" y="64" width="53" height="30"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackToHomeViewController:" destination="eMZ-c7-BSE" eventType="touchUpInside" id="2vf-bV-NBB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4FF-2b-nyM" firstAttribute="bottom" secondItem="gaY-lB-NYG" secondAttribute="bottom" constant="32" id="2Lp-Od-yJM"/>
+                            <constraint firstItem="kGm-RI-Gql" firstAttribute="top" secondItem="OZx-jw-zEv" secondAttribute="top" constant="64" id="2YJ-Os-VCT"/>
+                            <constraint firstItem="qtJ-Xw-uFQ" firstAttribute="top" secondItem="oqb-gm-Hd4" secondAttribute="bottom" constant="23" id="4eG-CE-Oky"/>
+                            <constraint firstItem="HWz-N5-qBB" firstAttribute="top" secondItem="NV2-CK-evb" secondAttribute="bottom" constant="40" id="8Uq-wD-Qgb"/>
+                            <constraint firstItem="HWz-N5-qBB" firstAttribute="leading" secondItem="4FF-2b-nyM" secondAttribute="leading" constant="16" id="9o2-oR-yrr"/>
+                            <constraint firstItem="4FF-2b-nyM" firstAttribute="trailing" secondItem="kGm-RI-Gql" secondAttribute="trailing" constant="292" id="ASI-iu-1jS"/>
+                            <constraint firstItem="4FF-2b-nyM" firstAttribute="trailing" secondItem="oqb-gm-Hd4" secondAttribute="trailing" constant="97" id="AVv-Jy-Nde"/>
+                            <constraint firstItem="HWz-N5-qBB" firstAttribute="top" secondItem="NV2-CK-evb" secondAttribute="bottom" constant="40" id="CAB-UA-QAX"/>
+                            <constraint firstItem="NV2-CK-evb" firstAttribute="top" secondItem="4FF-2b-nyM" secondAttribute="top" constant="141" id="ETd-06-A4i"/>
+                            <constraint firstItem="oqb-gm-Hd4" firstAttribute="leading" secondItem="4FF-2b-nyM" secondAttribute="leading" constant="96" id="GuF-t7-rms"/>
+                            <constraint firstItem="oqb-gm-Hd4" firstAttribute="top" secondItem="sMA-Mk-A8i" secondAttribute="bottom" constant="20" id="H9E-Kv-QCn"/>
+                            <constraint firstItem="gaY-lB-NYG" firstAttribute="top" secondItem="qtJ-Xw-uFQ" secondAttribute="bottom" constant="21" id="Rdo-fP-gdb"/>
+                            <constraint firstItem="4FF-2b-nyM" firstAttribute="trailing" secondItem="HWz-N5-qBB" secondAttribute="trailing" constant="16" id="Sxk-FF-Za5"/>
+                            <constraint firstItem="NV2-CK-evb" firstAttribute="leading" secondItem="4FF-2b-nyM" secondAttribute="leading" constant="16" id="Uez-Mx-lqt"/>
+                            <constraint firstItem="4FF-2b-nyM" firstAttribute="trailing" secondItem="qtJ-Xw-uFQ" secondAttribute="trailing" constant="16" id="XcX-mX-WCo"/>
+                            <constraint firstItem="qtJ-Xw-uFQ" firstAttribute="leading" secondItem="4FF-2b-nyM" secondAttribute="leading" constant="16" id="YR0-LI-BJB"/>
+                            <constraint firstItem="4FF-2b-nyM" firstAttribute="trailing" secondItem="sMA-Mk-A8i" secondAttribute="trailing" constant="16" id="kb0-BN-YUM"/>
+                            <constraint firstItem="4FF-2b-nyM" firstAttribute="trailing" secondItem="gaY-lB-NYG" secondAttribute="trailing" constant="100" id="lVn-t7-CxR"/>
+                            <constraint firstItem="kGm-RI-Gql" firstAttribute="leading" secondItem="4FF-2b-nyM" secondAttribute="leading" constant="30" id="m2C-ZI-WHw"/>
+                            <constraint firstItem="4FF-2b-nyM" firstAttribute="trailing" secondItem="NV2-CK-evb" secondAttribute="trailing" constant="16" id="ork-1x-JoG"/>
+                            <constraint firstItem="sMA-Mk-A8i" firstAttribute="top" secondItem="HWz-N5-qBB" secondAttribute="bottom" constant="40" id="r6R-Dh-eWH"/>
+                            <constraint firstItem="NV2-CK-evb" firstAttribute="top" secondItem="kGm-RI-Gql" secondAttribute="bottom" constant="67" id="rHF-Wd-96T"/>
+                            <constraint firstItem="sMA-Mk-A8i" firstAttribute="leading" secondItem="4FF-2b-nyM" secondAttribute="leading" constant="16" id="t9G-T7-6IC"/>
+                            <constraint firstItem="gaY-lB-NYG" firstAttribute="top" secondItem="qtJ-Xw-uFQ" secondAttribute="bottom" constant="21" id="x2F-Pp-WGB"/>
+                            <constraint firstItem="gaY-lB-NYG" firstAttribute="leading" secondItem="4FF-2b-nyM" secondAttribute="leading" constant="99" id="xzR-aE-QAx"/>
+                            <constraint firstItem="qtJ-Xw-uFQ" firstAttribute="top" secondItem="oqb-gm-Hd4" secondAttribute="bottom" constant="23" id="yhV-JT-y7Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4FF-2b-nyM"/>
+                    </view>
+                    <connections>
+                        <outlet property="EMailTextField" destination="NV2-CK-evb" id="8F6-ba-xLR"/>
+                        <outlet property="GuestTextField" destination="sMA-Mk-A8i" id="ca5-uD-rBK"/>
+                        <outlet property="PhoneNumberTextField" destination="HWz-N5-qBB" id="C8t-bH-2bI"/>
+                        <outlet property="TextView" destination="qtJ-Xw-uFQ" id="fr4-oX-TE7"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="HomeViewControllerSegue" id="jzb-LU-QTT"/>
+                        <segue destination="q9r-Dm-S8m" kind="showDetail" identifier="TafelsViewControllerSegue" id="Jjb-xr-tVk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSv-pf-aOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221.5999999999999" y="89.505247376311857"/>
+        </scene>
+        <!--Tafels View Controller-->
+        <scene sceneID="8F1-hH-apm">
+            <objects>
+                <viewController storyboardIdentifier="TafelsViewController" id="q9r-Dm-S8m" customClass="TafelsViewController" customModule="VievaMetTafels" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="SHT-dJ-eQx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBF-OD-XxA">
+                                <rect key="frame" x="27" y="67" width="116" height="93"/>
+                                <color key="backgroundColor" red="0.40468676229418832" green="0.24794832958598825" blue="0.080805128883859906" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Table 1" backgroundImage="wooden circle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GIY-aI-R4q" kind="show" id="P2Z-LI-k2t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiE-UH-0GT">
+                                <rect key="frame" x="243" y="287" width="115" height="93"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Table 2" backgroundImage="wooden circle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GIY-aI-R4q" kind="show" id="9ye-GK-MTO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPK-pz-tIZ">
+                                <rect key="frame" x="27" y="516" width="116" height="93"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Table 3" backgroundImage="wooden circle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GIY-aI-R4q" kind="show" id="O5M-Lb-yzI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vierkant" translatesAutoresizingMaskIntoConstraints="NO" id="nvP-BM-I9s">
+                                <rect key="frame" x="243" y="20" width="132" height="255"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="keuken" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Oj-aF-Ukv">
+                                <rect key="frame" x="265" y="104" width="104" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deur symbool" translatesAutoresizingMaskIntoConstraints="NO" id="Npg-7r-gip">
+                                <rect key="frame" x="127" y="20" width="108" height="25"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-VH-4cm">
+                                <rect key="frame" x="27" y="20" width="43" height="29"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Back2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackToSecondViewController:" destination="q9r-Dm-S8m" eventType="touchUpInside" id="uId-g2-sY6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJa-WN-sXe">
+                                <rect key="frame" x="243" y="516" width="115" height="93"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Table 5" backgroundImage="wooden circle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GIY-aI-R4q" kind="show" id="duN-2y-e8O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWK-QR-Mxj">
+                                <rect key="frame" x="27" y="287" width="116" height="93"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Table 4" backgroundImage="wooden circle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GIY-aI-R4q" kind="show" id="hLO-GU-Ix7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="bottom" secondItem="AiE-UH-0GT" secondAttribute="bottom" constant="287" id="0zF-Uq-pyz"/>
+                            <constraint firstItem="sJa-WN-sXe" firstAttribute="top" secondItem="AiE-UH-0GT" secondAttribute="bottom" constant="136" id="1Ea-K5-Oi6"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="bottom" secondItem="6Oj-aF-Ukv" secondAttribute="bottom" constant="533" id="2l5-Kr-8pg"/>
+                            <constraint firstItem="sJa-WN-sXe" firstAttribute="top" secondItem="E8D-be-NJY" secondAttribute="top" constant="496" id="3sv-YZ-TLo"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="trailing" secondItem="QPK-pz-tIZ" secondAttribute="trailing" constant="232" id="53v-wv-d2g"/>
+                            <constraint firstItem="zWK-QR-Mxj" firstAttribute="leading" secondItem="E8D-be-NJY" secondAttribute="leading" constant="27" id="5df-F7-iWK"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="trailing" secondItem="6Oj-aF-Ukv" secondAttribute="trailing" constant="6" id="5yL-G7-0zp"/>
+                            <constraint firstItem="nvP-BM-I9s" firstAttribute="leading" secondItem="3BJ-VH-4cm" secondAttribute="trailing" constant="173" id="6F4-0e-el4"/>
+                            <constraint firstItem="nvP-BM-I9s" firstAttribute="leading" secondItem="Npg-7r-gip" secondAttribute="trailing" constant="8" id="6Th-c5-02p"/>
+                            <constraint firstItem="AiE-UH-0GT" firstAttribute="top" secondItem="nvP-BM-I9s" secondAttribute="bottom" constant="12" id="7TP-9V-U0a"/>
+                            <constraint firstItem="nvP-BM-I9s" firstAttribute="top" secondItem="E8D-be-NJY" secondAttribute="top" id="7gF-oU-scz"/>
+                            <constraint firstItem="Npg-7r-gip" firstAttribute="leading" secondItem="3BJ-VH-4cm" secondAttribute="trailing" constant="57" id="8Dh-c3-F8L"/>
+                            <constraint firstItem="6Oj-aF-Ukv" firstAttribute="leading" secondItem="nvP-BM-I9s" secondAttribute="trailing" constant="-110" id="97G-rq-qRq"/>
+                            <constraint firstItem="AiE-UH-0GT" firstAttribute="leading" secondItem="zWK-QR-Mxj" secondAttribute="trailing" constant="100" id="9K9-bh-GiQ"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="trailing" secondItem="sJa-WN-sXe" secondAttribute="trailing" constant="17" id="ADl-Qz-cV4"/>
+                            <constraint firstItem="zWK-QR-Mxj" firstAttribute="height" secondItem="iBF-OD-XxA" secondAttribute="height" id="C3c-hI-adH"/>
+                            <constraint firstItem="nvP-BM-I9s" firstAttribute="leading" secondItem="iBF-OD-XxA" secondAttribute="trailing" constant="100" id="Ft0-IW-zix"/>
+                            <constraint firstItem="QPK-pz-tIZ" firstAttribute="top" secondItem="E8D-be-NJY" secondAttribute="top" constant="496" id="HLO-0f-nk0"/>
+                            <constraint firstItem="3BJ-VH-4cm" firstAttribute="leading" secondItem="E8D-be-NJY" secondAttribute="leading" constant="27" id="I5k-uL-hfN"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="trailing" secondItem="3BJ-VH-4cm" secondAttribute="trailing" constant="305" id="Jm7-wb-RsF"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="bottom" secondItem="QPK-pz-tIZ" secondAttribute="bottom" constant="58" id="Ksz-K6-xj7"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="bottom" secondItem="zWK-QR-Mxj" secondAttribute="bottom" constant="287" id="NlW-iZ-I2M"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="trailing" secondItem="nvP-BM-I9s" secondAttribute="trailing" id="Oo6-AU-uWr"/>
+                            <constraint firstItem="AiE-UH-0GT" firstAttribute="height" secondItem="sJa-WN-sXe" secondAttribute="height" id="Owc-Ie-SjZ"/>
+                            <constraint firstItem="AiE-UH-0GT" firstAttribute="height" secondItem="zWK-QR-Mxj" secondAttribute="height" id="P2x-CD-UDr"/>
+                            <constraint firstItem="iBF-OD-XxA" firstAttribute="top" secondItem="Npg-7r-gip" secondAttribute="bottom" constant="22" id="SOD-Wh-4h6"/>
+                            <constraint firstItem="nvP-BM-I9s" firstAttribute="top" secondItem="6Oj-aF-Ukv" secondAttribute="bottom" constant="-114" id="Se2-oc-NvM"/>
+                            <constraint firstItem="AiE-UH-0GT" firstAttribute="leading" secondItem="E8D-be-NJY" secondAttribute="leading" constant="243" id="Sg9-hU-YNW"/>
+                            <constraint firstItem="6Oj-aF-Ukv" firstAttribute="leading" secondItem="iBF-OD-XxA" secondAttribute="trailing" constant="122" id="UfM-PP-FsB"/>
+                            <constraint firstItem="sJa-WN-sXe" firstAttribute="leading" secondItem="E8D-be-NJY" secondAttribute="leading" constant="243" id="Uhw-ra-QI7"/>
+                            <constraint firstItem="sJa-WN-sXe" firstAttribute="leading" secondItem="QPK-pz-tIZ" secondAttribute="trailing" constant="100" id="YgL-Pc-Uhf"/>
+                            <constraint firstItem="iBF-OD-XxA" firstAttribute="top" secondItem="3BJ-VH-4cm" secondAttribute="bottom" constant="18" id="Zso-W6-hYz"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="bottom" secondItem="iBF-OD-XxA" secondAttribute="bottom" constant="507" id="bWh-XD-Uqn"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="trailing" secondItem="AiE-UH-0GT" secondAttribute="trailing" constant="17" id="cyA-Ha-vTq"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="trailing" secondItem="iBF-OD-XxA" secondAttribute="trailing" constant="232" id="dEQ-nX-umK"/>
+                            <constraint firstItem="3BJ-VH-4cm" firstAttribute="top" secondItem="E8D-be-NJY" secondAttribute="top" id="e7P-Pk-dvl"/>
+                            <constraint firstItem="zWK-QR-Mxj" firstAttribute="top" secondItem="E8D-be-NJY" secondAttribute="top" constant="267" id="f42-CH-J1t"/>
+                            <constraint firstItem="QPK-pz-tIZ" firstAttribute="top" secondItem="zWK-QR-Mxj" secondAttribute="bottom" constant="136" id="jLQ-Kh-exR"/>
+                            <constraint firstItem="Npg-7r-gip" firstAttribute="leading" secondItem="E8D-be-NJY" secondAttribute="leading" constant="127" id="jrQ-0Z-Kxr"/>
+                            <constraint firstItem="AiE-UH-0GT" firstAttribute="top" secondItem="6Oj-aF-Ukv" secondAttribute="bottom" constant="153" id="nUP-ZR-o3u"/>
+                            <constraint firstItem="nvP-BM-I9s" firstAttribute="leading" secondItem="E8D-be-NJY" secondAttribute="leading" constant="243" id="rHB-vj-Lfk"/>
+                            <constraint firstItem="iBF-OD-XxA" firstAttribute="leading" secondItem="E8D-be-NJY" secondAttribute="leading" constant="27" id="sDA-eR-fSA"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="bottom" secondItem="sJa-WN-sXe" secondAttribute="bottom" constant="58" id="uhp-JO-nv4"/>
+                            <constraint firstItem="QPK-pz-tIZ" firstAttribute="top" secondItem="iBF-OD-XxA" secondAttribute="bottom" constant="356" id="w2e-hb-fMi"/>
+                            <constraint firstItem="6Oj-aF-Ukv" firstAttribute="leading" secondItem="E8D-be-NJY" secondAttribute="leading" constant="265" id="wMo-L5-P5f"/>
+                            <constraint firstItem="Npg-7r-gip" firstAttribute="top" secondItem="E8D-be-NJY" secondAttribute="top" id="wsv-Rp-d1M"/>
+                            <constraint firstItem="6Oj-aF-Ukv" firstAttribute="top" secondItem="E8D-be-NJY" secondAttribute="top" constant="84" id="xtf-Vx-kht"/>
+                            <constraint firstItem="E8D-be-NJY" firstAttribute="trailing" secondItem="zWK-QR-Mxj" secondAttribute="trailing" constant="232" id="zBr-bd-Z5c"/>
+                            <constraint firstItem="zWK-QR-Mxj" firstAttribute="height" secondItem="QPK-pz-tIZ" secondAttribute="height" id="zLD-dF-fFc"/>
+                            <constraint firstItem="QPK-pz-tIZ" firstAttribute="leading" secondItem="E8D-be-NJY" secondAttribute="leading" constant="27" id="zh3-81-YN2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E8D-be-NJY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Table1" destination="iBF-OD-XxA" id="WYN-UB-jDg"/>
+                        <outlet property="Table2" destination="AiE-UH-0GT" id="dim-H0-8Tg"/>
+                        <outlet property="Table3" destination="QPK-pz-tIZ" id="qe6-i3-Er1"/>
+                        <outlet property="Table4" destination="zWK-QR-Mxj" id="NRs-47-AsG"/>
+                        <outlet property="Table5" destination="sJa-WN-sXe" id="cNX-JO-llg"/>
+                        <segue destination="eMZ-c7-BSE" kind="showDetail" identifier="SecondViewControllerVanuit3Segue" id="dhM-W8-WEV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aF3-Ke-J6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2160.8000000000002" y="89.505247376311857"/>
+        </scene>
+        <!--Reservering2 View Controller-->
+        <scene sceneID="kIU-Fm-dUL">
+            <objects>
+                <viewController id="GIY-aI-R4q" customClass="Reservering2ViewController" customModule="VievaMetTafels" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2xX-XU-B9b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usz-Y0-uYD" userLabel="Back">
+                                <rect key="frame" x="16" y="20" width="43" height="30"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackToSecondViewController:" destination="q9r-Dm-S8m" eventType="touchUpInside" id="3Y4-Ny-rSA"/>
+                                    <segue destination="q9r-Dm-S8m" kind="show" id="orx-ev-QrL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uw tafel is gereserveerd!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47F-Vy-DDh">
+                                <rect key="frame" x="47" y="66" width="299" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1wQ-Go-UDE">
+                                <rect key="frame" x="67" y="233" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686269999999" green="0.58823529409999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Usz-Y0-uYD" firstAttribute="leading" secondItem="x1P-HS-Dyc" secondAttribute="leading" constant="16" id="3aZ-9d-KCn"/>
+                            <constraint firstItem="47F-Vy-DDh" firstAttribute="top" secondItem="Usz-Y0-uYD" secondAttribute="bottom" constant="16" id="8Lu-Rf-0Dx"/>
+                            <constraint firstItem="Usz-Y0-uYD" firstAttribute="top" secondItem="x1P-HS-Dyc" secondAttribute="top" id="JhY-1N-Enw"/>
+                            <constraint firstItem="47F-Vy-DDh" firstAttribute="leading" secondItem="x1P-HS-Dyc" secondAttribute="leading" constant="47" id="d2R-we-c8f"/>
+                            <constraint firstItem="x1P-HS-Dyc" firstAttribute="trailing" secondItem="Usz-Y0-uYD" secondAttribute="trailing" constant="316" id="pa0-m3-u5N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x1P-HS-Dyc"/>
+                    </view>
+                    <connections>
+                        <outlet property="textViewResults" destination="1wQ-Go-UDE" id="P66-sq-66w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZZ-J8-lSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="94.902548725637189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buitenhof at night app Vieva" width="468" height="327"/>
+        <image name="deur symbool" width="311" height="119"/>
+        <image name="vierkant" width="225" height="225"/>
+        <image name="wooden circle" width="144" height="144"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="9ye-GK-MTO"/>
+        <segue reference="orx-ev-QrL"/>
+        <segue reference="dhM-W8-WEV"/>
+    </inferredMetricsTieBreakers>
+</document>
